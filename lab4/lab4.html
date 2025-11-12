@@ -1,0 +1,139 @@
+<html>
+<head>
+    <!--CSS Styling-->
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            background-color: #8f4cb6;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #9a2bce;
+            color: white;
+        }
+
+        a:link {color:#FF0000;}      /* unvisited link */
+        a:visited {color:#00FF00;}   /* visited link */
+        a:hover {color:#b552e2;}     /* mouse over link */
+        a:active {color:#0000FF;}    /* selected link */
+
+        form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #7e3838;
+            border-radius: 5px;
+            background-color: #c139ce;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 95%;
+            padding: 5px;
+            margin-top: 4px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 8px 12px;
+            background-color: #cac9ca;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#mv">MV</a>
+        <a href="#picture">Group Picture</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="home"> 
+        <h1 class="center">BTS</h1> 
+    </header>
+
+    <p class="center">
+        BTS is a South Korean boy band formed by Big Hit Music. 
+        <br>The group consists of seven members: RM, Jin, Suga, J-Hope, Jimin, V, and Jungkook. 
+        <br>They debuted on June 13, 2013, with the single album <i>2 Cool 4 Skool</i>, 
+        <br>and have since become one of the most globally recognized K-pop groups.
+    </p>
+    
+    <!--Media-->
+    <h2 id="mv" class="center">Butter MV</h2>
+    <div class="center">
+        <video width="400" height="300" controls>
+            <source src="C:\Users\MP2-4\Downloads\[CHOREOGRAPHY] BTS (방탄소년단) 'Butter' Special Performance Video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <p id="picture" class="center">
+        <b><a href="C:\Users\MP2-4\Downloads\Han Jimin.jpg" target="_blank">
+            BTS Group Picture
+        </a></b>
+    </p>
+
+    <!--Interactive Media Elements-->
+    <form id="contact">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+
+        <label>Favorite Hobbies:</label>
+        <input type="checkbox" name="hobby" value="music"> Music
+        <input type="checkbox" name="hobby" value="dance"> Dance
+        <input type="checkbox" name="hobby" value="travel"> Travel
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="center">
+        <p>Satisfaction:</p>
+        <meter min="0" max="100" value="20">20%</meter>
+    </div>
+
+</body>
+</html>
